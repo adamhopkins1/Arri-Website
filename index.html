@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+  <title>Homepage</title>
+
+  <style>
+  body{
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    background:#fafafa;
+    color:#db0011;
+    font-size:1.1em;
+    line-height:1.5;
+    text-align:center;
+  }
+
+  img{
+    display:block;
+    width:100%;
+    height:auto;
+  }
+
+  h1,
+  h2,
+  h3{
+    margin:0;
+    padding:1em 0;
+  }
+
+  p{
+    margin:0;
+    padding:1em 0;
+  }
+
+  .btn {
+    display:inline-block;
+    background:#fafafa;
+    color:#db0011;
+    text-decoration:none;
+    padding:1em 2em;
+    border:1px solid #79afc1;
+    margin:0.5em 0;
+  }
+
+  .btn:hover {
+    background:#eaeaea;
+    color:#db0011;
+  }
+
+  /* Header Section */
+  #showcase {
+    min-height:450px;
+    color:#db0011;
+    text-align:center
+  }
+
+  #showcase .bg-image {
+    position:absolute;
+    background:#db0011;
+    background-image:image("C:\Users\14435\Desktop\Website Project 1\Stories-Behind-Landscape-Photos-on-Offset-Spain-Sunset-2.jpg");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:100%;
+    height:450px;
+    z-index:-1;
+    opacity:0.4;
+  }
+
+  #showcase h1 {
+    padding-top:100px;
+    padding-bottom:0;
+  }
+
+  #showcase .content-wrap,
+  #section-a .content-wrap {
+    padding:0 1.5em;
+  }
+
+  /* Section A */
+  #section-a {
+    background:#db0011;
+    color:#3a82e4;
+    padding-bottom:2em;
+  }
+
+  /* Section B */
+  #section-b {
+    padding:2em 1em 1em;
+  }
+
+  #section-b ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+
+  #section-b li {
+    margin-bottom:1em;
+    background:#f9a541;
+    color:#7acef4;
+  }
+
+  .card-content {
+    padding:1.5em;
+  }
+
+  /* Section-c */
+  #section-c {
+    background:#6dc067;
+    color:#ff9900;
+    padding:2em;
+
+  }
+
+  /* Section-D Boxes  */
+  #section-d .box {
+    padding:2em;
+    color:#5c92fa;
+  }
+
+  #section-d .box:first-child {
+    background:#e50914;
+  }
+
+  /* Footer */
+  #main-footer {
+    padding:2em;
+    background:#000;
+    color:#e65124;
+    text-align:center;
+  }
+
+  #main-footer a {
+    color:#90cef1;
+    text-decoration:none;
+  }
+
+  /* Media Queries */
+  @media(min-width:700px) {
+    .grid{
+      display:grid;
+      grid-template-columns:1fr repeat(2,minmax(auto,25em)) 1fr;
+    }
+
+    #section-a .content-text {
+      columns:2;
+      column-gap:2em;
+    }
+
+    #section-a .content-text p {
+      padding-top:0;
+    }
+
+    .content-wrap,
+    #section-b ul {
+      grid-column:2/4;
+    }
+
+    .box,
+    #main-footer div {
+      grid-column:span 2;
+    }
+
+    #section-b ul {
+      display:flex;
+      justify-content:space-around;
+    }
+
+    #section-b li {
+      width:31%;
+    }
+  }
+   </style>
+</head>
+
+<body>
+  <header id="showcase" class="grid">
+    <div class="bg-image">
+      <img src="C:\Users\14435\Desktop\Website Project 1\Stories-Behind-Landscape-Photos-on-Offset-Spain-Sunset-2.jpg" alt="sunset" width="100%">
+    </div>
+    <div class="content-wrap">
+      <h1>ARRI-CameraPage</h1>
+      <p>A webpage dedicated to the stories behind films made with the Panasonic
+        Arri Camera</p>
+        <a href="#section-b" class="btn">Read More</a>
+      </div>
+    </header>
+
+    <!-- Main Areas -->
+    <main id="main">
+      <!-- Section A -->
+      <section id="section-a" class="grid">
+        <div class="content-wrap">
+          <h2 class="content-title">Content made with the Arris Camera.</h2>
+          <div class="content-text">
+            <p>ARRI is a global company within the motion picture media industry, employing around 1,400 staff worldwide. Named after its founders August Arnold and Robert Richter, ARRI was established in Munich, Germany, where the headquarters is still located today. Other subsidiaries are in Europe, North and South America, Asia, and Australia.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section B -->
+        <section id="section-b" class="grid">
+          <ul>
+            <li>
+              <div class="card">
+                <img src="C:\Users\14435\Desktop\Website Project 1\img-e4801-data.jpg" alt="camera1" />
+                <div class="card-content">
+                  <h3 class="card-title">Film Cameras-Alexa Mini LF</h3>
+                  <p>Combining the compact size and low weight of the popular ALEXA Mini with the large-format ALEXA LF sensor, ALEXA Mini LF brings exciting new creative possibilities to ARRI's large-format camera system.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+
+                <div class="card">
+                  <img src="C:\Users\14435\Desktop\Website Project 1\quote-alexa-lf-phedon-papamichael-asc-gsc-data.jpg" alt="camera2" />
+                  <div class="card-content">
+                    <h3 class="card-title">Film Cameras-Alexa LF</h3>
+                    <p>ARRI's new large-format camera system consists of the ALEXA LF camera, ARRI Signature Prime and Zoom lenses, LPL lens mount and PL-to-LPL Adapter. Featuring a sensor slightly larger than full frame, the ALEXA LF camera records native 4.5K with ARRI's best overall image quality.</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+
+                        <div class="card">
+                          <img src="C:\Users\14435\Desktop\Website Project 1\quotes-alexa-emmanuel-lubezki-data.jpg" alt="camera3" />
+                          <div class="card-content">
+                            <h3 class="card-title">Film Cameras-ARRI Amira</h3>
+                            <p>AMIRA - the perfect tool for your job - is a truly versatile camera that combines exceptional image quality and affordable CFast 2.0 workflows with an ergonomic design optimized for single-operator use and extended shoulder-mounted operation. Ready to pick up and shoot straight out of the camera bag, AMIRA is hardy enough to take anywhere and features in-camera grading with preloaded 3D LUTs, as well as 200 fps slow motion. The AMIRA ARRIRAW License Key enables in-camera 16:9 2.8K (2880 x 1620) MXF/ARRIRAW recording at frame rates of up to 48fps. It is suitable for a great variety of production types, from TV drama and low-budget movies to nature films, sports coverage, commercials, reportage, branded content and multi-camera live TV. Wherever you are headed and whatever you need to shoot, let AMIRA be your companion.</p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </section>
+
+                      <!-- Section C -->
+                      <section id="section-c" class="grid">
+                        <div class="content-wrap">
+                          <h2 class="content-title">Solution driven, tailor-made applications for a wide variety of market segments</h2>
+                          <p>Shoot cinema quality in any environment from any location with remote control of lights and cameras, including camera movement, with the ARRI Remote Solution for cinema</p>
+                          </div>
+                        </section>
+
+                        <!-- Section D -->
+                        <section id="section-d" class="grid">
+                          <div class="box">
+                            <h2 class=Content-title>Contact Us</h2>
+                            <p>A direct contact to ARRI. Need information on ARRI Products or want a quote?Contact us and we
+                              ll get back to you.</p>
+                              <p>email@123.com</p>
+                          </div>
+                          <div class="box">
+                            <h2 class="content-title">About our company</h2>
+                            <p>The ARRI Group consists of the business units Camera Systems, Lighting, Media, and Rental, all dedicated to connecting art and future technologies for moving images. ARRI is a leading designer and manufacturer of camera and lighting systems for the film and broadcast industry, with a worldwide distribution and service network. It is also an integrated media service provider in the fields of film post- and coproduction, international sales, as well as equipment rental, and supplying camera, lighting, and grip packages to professional productions.</p>
+                          </div>
+                          </section>
+                         </main>
+
+                  <!-- Footer -->
+                  <footer id="main-footer" class="grid">
+                    <div>ARRI Partner Solutions</div>
+                    <div>A Hopkins Investment Partners Program Website.<a href="https://github.com/adamhopkins1" target="_blank">ARRI Partners/Hopkins Investment Partners</a></div>
+                  </footer>
+                </body>
+                </html>
